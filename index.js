@@ -1,9 +1,9 @@
-const autocalver = (date = new Date()) => {
-  const thisMonth = date.getUTCMonth() + 1
-  const thisDate = date.getUTCDate()
-  const thisYear = date.getUTCFullYear()
-
-  return `${thisYear}.${thisMonth}.${thisDate}`
+const autocalver = (input = new Date()) => {
+  const year = input.getUTCFullYear()
+  const month = input.getUTCMonth() + 1
+  const date = input.getUTCDate()
+  
+  return `${year}.${month}.${date}`
 }
 
 module.exports = autocalver

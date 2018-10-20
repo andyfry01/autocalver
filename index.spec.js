@@ -2,9 +2,9 @@ const autocalver = require('./index.js')
 const exec = require('child_process').execFile;
 
 const today = new Date()
-const thisMonth = today.getUTCMonth() + 1
-const thisDate = today.getUTCDate()
-const thisYear = today.getUTCFullYear()
+const year = today.getUTCFullYear()
+const month = today.getUTCMonth() + 1
+const date = today.getUTCDate()
 
 describe('autocalver tests', () => {
   describe('node module tests', () => {
@@ -26,7 +26,7 @@ describe('autocalver tests', () => {
     it('should return a correctly formatted calver date when called with no arguments', () => {
       const output = autocalver()
       const actual = output
-      const expected = `${thisYear}.${thisMonth}.${thisDate}`
+      const expected = `${year}.${month}.${date}`
   
       expect(actual).toBe(expected)
     })
@@ -63,7 +63,7 @@ describe('autocalver tests', () => {
     it('should return a correctly formatted calver date when called with no arguments', () => {
       exec('./bin/cli.js', (err, res) => {
         const actual = res.toString()
-        const expected = `${thisYear}.${thisMonth}.${thisDate}`
+        const expected = `${year}.${month}.${date}`
 
         expect(actual).toBe(expected)
       })
