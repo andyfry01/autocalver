@@ -1,0 +1,18 @@
+{
+  "name": "autosemver",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:watch": "jest --watchAll",
+    "test": "jest ./index.spec.js"
+  },
+  "author": "Andy Fry",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "bin": {
+    "autocalver": "./bin/cli.js"
+  }
+}
