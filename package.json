@@ -9,6 +9,10 @@
   },
   "author": "Andy Fry",
   "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/andyfry01/autocalver.git"
+  },
   "devDependencies": {
     "jest": "^23.6.0"
   },
