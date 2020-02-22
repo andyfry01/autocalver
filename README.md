@@ -36,7 +36,7 @@ const dateObj = new Date('1955-11-5')
 const calverNumber = autocalver(dateObj)
 
 console.log(calverNumber)
-// => 1995.11.5
+// => 1955.11.5
 ```
 
 This feature is not available for the shell script ... yet. Maybe you could implement it in a PR? 🙃
