@@ -14,7 +14,7 @@
     "url" : "https://github.com/andyfry01/autocalver.git"
   },
   "devDependencies": {
-    "jest": "^23.6.0"
+    "jest": "^29.3.1"
   },
   "bin": {
     "autocalver": "./bin/cli.js"
